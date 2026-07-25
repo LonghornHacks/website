@@ -9,7 +9,7 @@
     --color-bright-blue: #0047b1;
 }
 
-a {
+a:not(.no-underline) {
     @apply text-bright-orange;
     @apply underline;
     @apply font-medium;
