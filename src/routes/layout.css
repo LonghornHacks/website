@@ -1,1 +1,21 @@
 @import 'tailwindcss';
+
+@theme {
+    --color-burnt-orange: #c15c0c;
+    --color-bright-orange: #ec9006;
+    --color-blazing-orange: #ffc700;
+    --color-dark-navy-blue: #000135;
+    --color-navy-blue: #000167;
+    --color-bright-blue: #0047b1;
+}
+
+a {
+    @apply text-bright-orange;
+    @apply underline;
+    @apply font-medium;
+}
+
+a:hover {
+    @apply text-burnt-orange;
+    @apply underline;
+}
