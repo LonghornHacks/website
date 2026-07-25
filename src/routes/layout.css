@@ -7,6 +7,8 @@
     --color-dark-navy-blue: #000135;
     --color-navy-blue: #000167;
     --color-bright-blue: #0047b1;
+    --color-background-grey: #0f0f1e;
+    --color-text-grey: #cacaca;
 }
 
 a:not(.no-underline) {
