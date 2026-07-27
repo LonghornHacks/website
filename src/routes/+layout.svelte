@@ -8,30 +8,34 @@
 </script>
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
-<nav class="h-15 flex w-screen border-b-burnt-orange border-b-2
- bg-dark-navy-blue text-bright-orange font-sans border-round
- rounded-b-xl items-center">
+<nav class="md:h-15 h-10 flex glass-nav fixed
+ text-bright-orange font-mono self-center
+  items-center top-3 z-50 shadow">
     <div class="mx-0 inline-block">
-        <a href="/" class="align-top"><img class="h-14.5" src={logo_blazing_orange} alt="Longhorn Hacks White Logo"></a>
+        <a href="/" class="align-top"><img class="md:h-14.5 h-9.5" src={logo_blazing_orange} alt="Logo"></a>
     </div>
     <div class="ml-auto mx-8 align-middle justify-right">
-        <a href="/" class="mx-4 no-underline text-xl">Home</a>
-        <a href="/about" class="mx-4 no-underline text-xl">About</a>
-        <a href="/contact" class="mx-4 no-underline text-xl">Contact</a>
-        <a href="/programs" class="mx-4 no-underline text-xl">Programs</a>
-        <a href="/events" class="mx-4 no-underline text-xl">Events</a>
+        <a href="/" class="md:mx-4 mx-1.5 no-underline md:text-xl text-xs">Home</a>
+        <a href="/about" class="md:mx-4 mx-1.5 no-underline md:text-xl text-xs">About</a>
+        <a href="/contact" class="md:mx-4 mx-1.5 no-underline md:text-xl text-xs">Contact</a>
+        <a href="/programs" class="md:mx-4 mx-1.5 no-underline md:text-xl text-xs">Programs</a>
+        <a href="/events" class="md:mx-4 mx-1.5 no-underline md:text-xl text-xs">Events</a>
     </div>
 </nav>
-<div class="grow bg-background-grey text-text-grey font-extralight font-sans">
-    {@render children()}
-</div>
-<footer class="flex text-burnt-orange bg-dark-navy-blue border-t-2 border-blazing-orange bottom-0 w-screen h-16 items-center">
-    <div class="flex grow items-center justify-items-start justify-start">
-        <a href="/" class=""><img class="h-12.5" src={logo_blue_bg} alt="Longhorn Hacks Logo"></a>
-        <a href="/legal" class="mx-4 no-underline text-lg align-middle">Legal</a>
+<div class="md:pt-21 pt-16 flex flex-col grow overscroll-none">
+    <div class="grow text-text-grey
+    font-extralight font-body">
+        {@render children()}
     </div>
-    <p class="mx-12 text-sm align-middle">
-        This website is Open Source:
-        <a href="https://github.com/longhornhacks/website" target="_blank" rel="noopener noreferrer">Source Code</a>
-    </p>
-</footer>
+    <footer class="flex text-burnt-orange bg-dark-navy-blue border-t-2
+    border-blazing-orange bottom-0 w-screen h-16 items-center">
+        <div class="flex grow items-center justify-items-start justify-start">
+            <a href="/" class=""><img class="h-12.5" src={logo_blue_bg} alt="Logo"></a>
+            <a href="/legal" class="mx-4 no-underline text-lg align-middle font-mono">Legal</a>
+        </div>
+        <p class="mx-12 text-sm align-middle font-mono">
+            This website is Open Source:
+            <a href="https://github.com/longhornhacks/website" target="_blank" rel="noopener noreferrer">Source Code</a>
+        </p>
+    </footer>
+</div>
