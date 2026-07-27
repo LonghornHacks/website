@@ -3,3 +3,4 @@
     <a href="https://github.com/longhornhacks/website">github.com/longhornhacks/website</a>.
     As the website is unfinished, some links may not work.
 </p>
+<svelte:head><title>Longhorn Hacks - Home</title></svelte:head>

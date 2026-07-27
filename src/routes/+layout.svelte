@@ -9,7 +9,7 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <nav class="md:h-15 h-10 flex glass-nav fixed
- text-bright-orange font-sans border-round self-center
+ text-bright-orange font-mono border-round self-center
  rounded-xl items-center top-3 z-50 shadow">
     <div class="mx-0 inline-block">
         <a href="/" class="align-top"><img class="md:h-14.5 h-9.5" src={logo_blazing_orange} alt="Logo"></a>
@@ -24,16 +24,16 @@
 </nav>
 <div class="md:pt-21 pt-16 flex flex-col grow overscroll-none">
     <div class="grow text-text-grey
-    font-extralight font-sans">
+    font-extralight font-body">
         {@render children()}
     </div>
     <footer class="flex text-burnt-orange bg-dark-navy-blue border-t-2
     border-blazing-orange bottom-0 w-screen h-16 items-center">
         <div class="flex grow items-center justify-items-start justify-start">
             <a href="/" class=""><img class="h-12.5" src={logo_blue_bg} alt="Logo"></a>
-            <a href="/legal" class="mx-4 no-underline text-lg align-middle">Legal</a>
+            <a href="/legal" class="mx-4 no-underline text-lg align-middle font-mono">Legal</a>
         </div>
-        <p class="mx-12 text-sm align-middle">
+        <p class="mx-12 text-sm align-middle font-mono">
             This website is Open Source:
             <a href="https://github.com/longhornhacks/website" target="_blank" rel="noopener noreferrer">Source Code</a>
         </p>

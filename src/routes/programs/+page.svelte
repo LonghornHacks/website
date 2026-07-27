@@ -2,3 +2,4 @@
 <p class="text-sm">
     This is currently a placeholder page while the website is under construction. Try coming back later.
 </p>
+<svelte:head><title>Longhorn Hacks - Programs</title></svelte:head>

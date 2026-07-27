@@ -9,7 +9,8 @@
     --color-bright-blue: #0047b1;
     --color-text-grey: #cacaca;
 
-    --background-blur: blur(12px);
+    --font-body: Montserrat, "system-ui", -apple-system, 'Nunito', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
 }
 
 .glass-nav {
