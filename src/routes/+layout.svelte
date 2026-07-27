@@ -9,8 +9,8 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <nav class="md:h-15 h-10 flex glass-nav fixed
- text-bright-orange font-mono border-round self-center
- rounded-xl items-center top-3 z-50 shadow">
+ text-bright-orange font-mono self-center
+  items-center top-3 z-50 shadow">
     <div class="mx-0 inline-block">
         <a href="/" class="align-top"><img class="md:h-14.5 h-9.5" src={logo_blazing_orange} alt="Logo"></a>
     </div>

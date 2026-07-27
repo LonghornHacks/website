@@ -1,3 +1,5 @@
+<svelte:head><title>Longhorn Hacks - About</title></svelte:head>
+
 <p class="text-4xl">About</p>
 <br>
 <p class="text-2xl">Our Mission:</p>
@@ -8,4 +10,3 @@
     Our mission is to connect people through technology and empower the next generation of leaders in a rapidly
     developing world.
 </p>
-<svelte:head><title>Longhorn Hacks - About</title></svelte:head>

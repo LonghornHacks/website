@@ -16,16 +16,8 @@
 .glass-nav {
     @apply backdrop-blur-xs;
     width: calc(100vw - 24px);
-    /* Soft, subtle glass fill with the light source biased toward the top-right corner */
-    background: radial-gradient(
-        140% 180% at 100% 0%,
-        rgba(255, 255, 255, 0.18) 0%,
-        rgba(255, 255, 255, 0.06) 25%,
-        rgba(22, 22, 37, 0.35) 60%,
-        rgba(10, 10, 20, 0.45) 100%
-    );
     /* Big, evenly rounded corners so it reads as a rounded glass box */
-    border-radius: 28px;
+    border-radius: 22px;
     /* Border brightest at the top-right where the light hits, darker on the opposite edges */
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-top-color: rgba(255, 255, 255, 0.4);
@@ -38,44 +30,6 @@
         inset 8px -8px 18px rgba(255, 255, 255, 0.08);
     overflow: hidden;
     isolation: isolate;
-}
-
-/* Top-right specular highlight — the bright glare where light strikes the rounded glass */
-.glass-nav::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-        180% 120% at 150% -20%,
-        rgba(255, 255, 255, 0.6) 0%,
-        rgba(255, 255, 255, 0.22) 30%,
-        rgba(255, 255, 255, 0) 65%
-    );
-    border-radius: inherit;
-    pointer-events: none;
-    z-index: 1;
-}
-
-/* Bottom-left shadow/reflection — the far side of the glass, away from the light */
-.glass-nav::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-        70% 130% at 0% 100%,
-        rgba(0, 0, 0, 0.35) 0%,
-        rgba(0, 0, 0, 0.12) 40%,
-        rgba(0, 0, 0, 0) 70%
-    );
-    border-radius: inherit;
-    pointer-events: none;
-    z-index: 1;
-}
-
-/* Keep the nav contents above the glossy overlays */
-.glass-nav > * {
-    position: relative;
-    z-index: 2;
 }
 
 a:not(.no-underline) {
