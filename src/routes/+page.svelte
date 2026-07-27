@@ -75,57 +75,56 @@
 
 <div class="reveal-hero">
     <div
-        class="hero-content"
+        class="hero-content flex flex-col-reverse"
         style="
             transform: translateY({logoTranslate}px);
             filter: blur({logoBlur}px);
             opacity: {logoOpacity};
         "
     >
-        <p class="text-6xl text-center font-mono">Longhorn Hacks</p>
         <img
             src={logo}
             alt="Longhorn Hacks logo"
-            class="block mx-auto -mt-30 w-full max-w-3xl h-auto"
+            class="block mx-auto md:-mt-30 -mt-10 w-full max-w-3xl h-auto"
         />
+        <p class="text-6xl text-center font-mono">Longhorn Hacks</p>
     </div>
 </div>
 
 <div
-    class="reveal-body mx-auto max-w-3xl px-6 pb-40"
+    class="reveal-body mx-auto max-w-3xl px-6"
     style="opacity: {bodyOpacity}; transform: translateY({bodyTranslate}px);"
 >
-    <p class="text-4xl text-center">There's never been a better time than now to learn to code.</p>
+    <p class="text-4xl text-center">There's never been a better time to learn to code.</p>
     <br>
     <hr>
     <br>
     <p>
         With AI technology revolutionizing the field and new projects starting every day,
         a new frontier has opened where anyone with the skills to code and the imagination to innovate
-        could change the world tomorrow.
+        could change the world.
     </p>
     <br>
-    <p class="text-center text-3xl">So here's your sign to get started.</p>
+    <p class="text-center text-3xl">This is your sign to get started.</p>
     <br>
     <p>
         Longhorn Hacks is on a mission to spread AI and Computer Science literacy across Central Texas.
-        Additionally, we're committed to focusing on leveling the playing field, targeting the
+        Additionally, we're committed to leveling the playing field, targeting the
         underprivileged communities that need our help the most.
     </p>
     <br>
     <p>
-        Head over the the <a href="/events">Events page</a> to see if and when we're visiting your
+        Head over the the <a href="/events">events page</a> to see when we're visiting your
         community next.
     </p>
-
 </div>
 
-<section class="typing-section">
+<div class="typing-section">
     <p class="typing-line font-mono">
         Raising tomorrow's<br>
         <span class="typed-word">{typedText}</span><span class="cursor" aria-hidden="true"></span>
     </p>
-</section>
+</div>
 
 <style>
     .reveal-hero {
@@ -154,8 +153,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 30vh;
-        padding: 4rem 1.5rem;
+        padding: clamp(5dvh, 4rem, 15dvh) 1.5rem;
         text-align: center;
     }
 
