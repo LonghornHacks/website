@@ -6,8 +6,6 @@
     "nodejs_compat"
   ],
   "pages_build_output_dir": ".svelte-kit/cloudflare",
-  "workers_dev": true,
-  "preview_urls": true,
   "observability": {
     "enabled": true
   }
