@@ -3,5 +3,5 @@
   "name": "website",
   "pages_build_output_dir": ".svelte-kit/cloudflare",
   "compatibility_flags": ["nodejs_compat"],
-  "compatibility_date": "2026-7-27"
+  "compatibility_date": "2026-7-24"
 }
