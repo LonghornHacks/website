@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
+    "dev-host": "vite dev --host",
     "build": "wrangler types --check && vite build",
     "preview": "npm run build && wrangler dev",
     "prepare": "svelte-kit sync || echo ''",
