@@ -6,12 +6,12 @@
   "scripts": {
     "dev": "vite dev",
     "dev-host": "vite dev --host",
-    "build": "wrangler types --check && vite build",
-    "preview": "npm run build && wrangler pages dev",
+    "build": "npx wrangler types --check && vite build",
+    "preview": "npm run build && npx wrangler pages dev",
     "prepare": "svelte-kit sync || echo ''",
-    "check": "wrangler types --check && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check": "npx wrangler types --check && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "gen": "wrangler types",
+    "gen": "npx wrangler types",
     "deploy": "npm run build && wrangler deploy",
     "cf-typegen": "wrangler types"
   },
