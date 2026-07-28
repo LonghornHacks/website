@@ -20,7 +20,7 @@
         <a href="/about" class="md:mx-4 mx-1.5 no-underline md:text-xl text-[11px]">About</a>
         <a href="/programs" class="md:mx-4 mx-1.5 no-underline md:text-xl text-[11px]">Programs</a>
         <a href="/events" class="md:mx-4 mx-1.5 no-underline md:text-xl text-[11px]">Events</a>
-        <a href="" class="md:mx-4 mx-1.5 no-underline md:text-xl text-[11px]" target="_blank" rel="noopener noreferrer">
+        <a href="" class="md:mx-4 mx-1.5 no-underline md:text-xl text-[11px]"> <!--target="_blank" rel="noopener noreferrer"-->
             Donate<img src={extern_link} alt="External Link" class="external-link-icon"/>
         </a>
     </div>
