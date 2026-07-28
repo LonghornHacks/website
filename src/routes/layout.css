@@ -17,7 +17,7 @@
     @apply backdrop-blur-xs;
     width: calc(100vw - 24px);
     /* Big, evenly rounded corners so it reads as a rounded glass box */
-    border-radius: 22px;
+    @apply md:rounded-[22px] rounded-2xl;
     /* Border brightest at the top-right where the light hits, darker on the opposite edges */
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-top-color: rgba(255, 255, 255, 0.4);

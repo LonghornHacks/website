@@ -2,5 +2,5 @@
 
 <p class="text-4xl">Contact</p>
 <p class="text-sm">
-    We don't have a contact email right now. Please come back later!
+    Questions? Contact us at <a href="mailto:contact@longhornhacks.org">contact@longhornhacks.org</a>
 </p>
