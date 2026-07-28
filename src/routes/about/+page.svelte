@@ -1,8 +1,8 @@
 <svelte:head><title>Longhorn Hacks - About</title></svelte:head>
 
-<p class="text-4xl">About</p>
+<p class="text-4xl mb-3">About</p>
 <hr>
-<p class="text-sm">
+<p class="mt-1">
     Longhorn Hacks is a registered 501(c)(3) nonprofit organization dedicated to expanding access to technology
     education and creating opportunities for underserved communities. Through corporate sponsorships and fundraising
     events, we work to bridge the digital divide by increasing computer science and artificial intelligence literacy.
