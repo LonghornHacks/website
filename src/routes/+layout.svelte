@@ -21,7 +21,7 @@
         <a href="/programs" class="md:mx-4 mx-1.5 no-underline md:text-xl text-[11px]">Programs</a>
         <a href="/events" class="md:mx-4 mx-1.5 no-underline md:text-xl text-[11px]">Events</a>
         <a href="" class="md:mx-4 mx-1.5 no-underline md:text-xl text-[11px]"> <!--target="_blank" rel="noopener noreferrer"-->
-            Donate<img src={extern_link} alt="External Link" class="external-link-icon"/>
+            Donate<img src={extern_link} alt="External Link" class="external-link-nav"/>
         </a>
     </div>
 </nav>
@@ -40,8 +40,32 @@
             </div>
         </div>
         <p class="md:mx-12 mx-8 md:ml-12 ml-2 md:text-sm text-xs align-middle font-mono">
-            This website is Open Source:
-            <a href="https://github.com/longhornhacks/website" target="_blank" rel="noopener noreferrer">Source Code</a>
+            This website is <a href="https://github.com/longhornhacks/website" target="_blank" rel="noopener noreferrer">
+            Open Source<img src={extern_link} alt="External Link" class="external-link-footer"/></a>
         </p>
     </footer>
 </div>
+
+<style>
+    .external-link-nav {
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+
+        @media (width >= 48rem) {
+            height: 22px;
+            width: 22px;
+        }
+    }
+
+    .external-link-footer {
+        display: inline-block;
+        height: 13px;
+        width: 13px;
+
+        @media (width >= 48rem) {
+            height: 16px;
+            width: 16px;
+        }
+    }
+</style>

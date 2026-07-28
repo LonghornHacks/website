@@ -13,17 +13,6 @@
     --font-mono: 'JetBrains Mono', monospace;
 }
 
-.external-link-icon {
-    display: inline-block;
-    height: 12px;
-    width: 12px;
-
-    @media (width >= 48rem) {
-        height: 22px;
-        width: 22px;
-    }
-}
-
 .glass-nav {
     @apply backdrop-blur-xs;
     width: calc(100vw - 24px);
