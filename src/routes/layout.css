@@ -9,36 +9,93 @@
     --color-bright-blue: #0047b1;
     --color-text-grey: #cacaca;
 
-    --font-body: Montserrat, "system-ui", -apple-system, 'Nunito', sans-serif;
+    /* Longhorn Hacks palette */
+    --color-lhh-ink: #04091A;
+    --color-lhh-panel: #060D24;
+    --color-lhh-cream: #F7F4EF;
+    --color-lhh-orange: #FF6A00;
+    --color-lhh-orange-soft: #FF8A2B;
+    --color-lhh-orange-tint: #FFA65C;
+    --color-lhh-blue: #6E90E8;
+    --color-lhh-muted: #A8B0C8;
+    --color-lhh-dim: #7D87A5;
+
+    --font-body: Manrope, Montserrat, "system-ui", -apple-system, 'Nunito', sans-serif;
+    --font-display: Archivo, "system-ui", sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
 }
 
 .glass-nav {
-    @apply backdrop-blur-xs;
     width: calc(100vw - 24px);
-    /* Big, evenly rounded corners so it reads as a rounded glass box */
-    @apply md:rounded-[22px] rounded-2xl;
-    /* Border brightest at the top-right where the light hits, darker on the opposite edges */
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-top-color: rgba(255, 255, 255, 0.4);
-    border-right-color: rgba(255, 255, 255, 0.35);
-    /* Outer soft glow + inner highlights sculpt the rounded glass surface */
-    box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.35),
-        inset 2px -2px 1px rgba(255, 255, 255, 0.45),
-        inset -8px 8px 20px rgba(0, 0, 0, 0.3),
-        inset 8px -8px 18px rgba(255, 255, 255, 0.08);
-    overflow: hidden;
+    /* Longhorn Hacks: fully-rounded glass pill */
+    border-radius: 999px;
+    border: 1px solid rgba(247, 244, 239, 0.11);
+    background: rgba(6, 12, 32, 0.66);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
     isolation: isolate;
 }
 
-a:not(.no-underline) {
+/* Longhorn Hacks mono nav links */
+.lhh-nav-link {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--color-lhh-muted) !important;
+    transition: color 0.3s ease, transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.lhh-nav-link:hover {
+    color: var(--color-lhh-cream) !important;
+    transform: scale(1.08);
+}
+
+/* Filled orange pill CTA */
+.lhh-cta {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    background: var(--color-lhh-orange);
+    color: var(--color-lhh-ink) !important;
+    border-radius: 999px;
+    box-shadow: 0 8px 26px rgba(255, 106, 0, 0.4);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.lhh-cta:hover {
+    background: var(--color-lhh-orange-soft);
+    color: var(--color-lhh-ink) !important;
+    box-shadow: 0 12px 36px rgba(255, 138, 43, 0.6);
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Longhorn Hacks footer links */
+.lhh-foot-link {
+    font-family: var(--font-body);
+    color: var(--color-lhh-muted) !important;
+    transition: color 0.3s ease, transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.lhh-foot-link:hover {
+    color: var(--color-lhh-orange-soft) !important;
+    transform: translateX(5px);
+}
+
+.lhh-foot-label {
+    font-family: var(--font-mono);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #5E688A;
+}
+
+a:not(.no-underline):not(.lhh-nav-link):not(.lhh-cta):not(.lhh-foot-link) {
     @apply text-bright-orange;
     @apply underline;
     @apply font-medium;
 }
 
-a:hover {
+a:not(.lhh-nav-link):not(.lhh-cta):not(.lhh-foot-link):hover {
     @apply text-burnt-orange;
     @apply underline;
 }

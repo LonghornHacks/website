@@ -1,8 +1,11 @@
+<script>
+</script>
+
 <svelte:head><title>Longhorn Hacks - Programs</title></svelte:head>
 
-<p class="text-4xl">Programs</p>
+<p class="text-4xl mb-3">Programs</p>
 <hr>
-<p class="text-sm">
+<p class="mt-1">
     Longhorn Hacks is still a <i>very</i> young organization so we are yet to plan out our programs. However, we do
     still have a general idea of what they will be: we are aiming to have programs that teach beginner programming and
     AI use for programming, as well as more advanced classes, such as data structures or machine learning. We also hope
